@@ -1,30 +1,59 @@
-# OneKeyBridge
+# AutoMC
 
-**CLOSE USING TASK MANAGER**
+AutoMC is a lightweight Minecraft automation utility created by nandoRock with AI assistance.
 
-OneKeyBridge is a simple automation utility for Minecraft created me
+AutoMC is designed to automate simple keyboard and mouse inputs for repetitive Minecraft tasks. It is not a mod, plugin, hack client, injector, or memory editor.
 
-This tool is **not a Minecraft mod, plugin, hack client, or injection tool**. It does not interact with Minecraft's files or modify the game in any way.
+## Features
 
-When activated by pressing f10, OneKeyBridge simply:
+* Walk forward automatically
+* Walk backwards automatically
+* Hold right-click automatically for block placement
+* Simple hotkey controls
+* Built-in instructions window
+* Optional "Don't show again" setting
+* Lightweight and easy to use
 
-* Holds the **S** key.
-* Holds the **right mouse button**.
+## Controls
 
-That's all it does.
+| Key | Function                                    |
+| --- | ------------------------------------------- |
+| F9  | Toggle walking forward                      |
+| F10 | Toggle walking backwards and placing blocks |
+| F8  | Close AutoMC                                |
 
-OneKeyBridge does **not**:
+Press the same key again to stop its action.
 
-* Automatically move your camera.
-* Automatically aim.
-* Automatically place blocks at specific locations.
-* Automatically switch items or hotbar slots.
-* Read game data or interact with Minecraft's memory.
-* Provide pathfinding, combat assistance, or other automated gameplay features.
+## How It Works
 
-OneKeyBridge functions as a basic keyboard and mouse automation tool designed to reduce repetitive input during tasks such as backwards bridging.
+AutoMC only automates keyboard and mouse inputs:
 
-Created by NandoRock.
+* F9 holds the W key.
+* F10 holds the S key and right mouse button.
+* F8 releases all inputs and exits the application.
 
-Users are responsible for ensuring that use of this tool complies with the rules of any server or platform they play on.
-yes i used ai a little
+AutoMC does not:
+
+* Move your camera
+* Aim automatically
+* Switch hotbar slots
+* Read game memory
+* Modify Minecraft files
+* Inject into Minecraft
+* Place blocks intelligently
+
+## Startup Instructions
+
+When AutoMC launches, an instructions window is displayed explaining the available controls. Users can choose not to show this message again.
+
+## AI Disclosure
+
+AutoMC was created by nandoRock with assistance from AI tools. AI was used to help generate portions of the AutoHotkey code, documentation, and project assets. All code was reviewed, tested, and published by me.
+
+## Disclaimer
+
+AutoMC is a simple input automation tool. Users are responsible for ensuring that their use of AutoMC complies with the rules of any Minecraft server, community, or platform they play on.
+
+## Author
+
+Created by nandoRock.
