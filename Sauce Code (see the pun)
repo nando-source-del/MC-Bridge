@@ -1,0 +1,73 @@
+#Requires AutoHotkey v2.0
+
+if !FileExist(A_AppData "\AutoMC\dontshow.txt") {
+instructions := Gui()
+instructions.Title := "Instructions"
+instructions.SetFont("s10")
+
+```
+instructions.AddText(
+    ,
+    "F9 to walk forward without pressing W.`n`n"
+    . "F10 to walk backwards and place blocks for bridging.`n`n"
+    . "Press the same key again to stop.`n`n"
+    . "Press F8 to close the program."
+)
+
+dontShow := instructions.AddCheckbox("vDontShow", "Don't show again")
+
+okButton := instructions.AddButton("Default w80", "OK")
+okButton.OnEvent("Click", (*) => CloseInstructions())
+
+CloseInstructions(*) {
+    saved := instructions.Submit()
+
+    if saved.DontShow {
+        DirCreate(A_AppData "\AutoMC")
+        FileAppend("dont show again", A_AppData "\AutoMC\dontshow.txt")
+    }
+
+    instructions.Destroy()
+}
+
+instructions.Show()
+```
+
+}
+
+F8:: {
+Send("{w up}")
+Send("{s up}")
+Click("Up Right")
+ExitApp()
+}
+
+F10:: {
+static enabled := false
+enabled := !enabled
+
+```
+if enabled {
+    Send("{s down}")
+    Click("Down Right")
+} else {
+    Send("{s up}")
+    Click("Up Right")
+}
+```
+
+}
+
+F9:: {
+static enabled := false
+enabled := !enabled
+
+```
+if enabled {
+    Send("{w down}")
+} else {
+    Send("{w up}")
+}
+```
+
+}
