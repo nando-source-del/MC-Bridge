@@ -4,7 +4,7 @@ OneKeyBridge is a simple automation utility for Minecraft created me
 
 This tool is **not a Minecraft mod, plugin, hack client, or injection tool**. It does not interact with Minecraft's files or modify the game in any way.
 
-When activated, OneKeyBridge simply:
+When activated by pressing f10, OneKeyBridge simply:
 
 * Holds the **S** key.
 * Holds the **right mouse button**.
